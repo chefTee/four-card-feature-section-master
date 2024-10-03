@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-summary-section{
+    width: 40%;
+    margin: 1rem auto;
+    text-align: center;
+}
+.page-summary-heading{
+    font-size: 25px;
+}
+.page-summary-heading.one span{
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+.page-summary-heading.two span{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.page-summary{
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(229, 6%, 66%);
+}
+.tools-section{
+    display: grid;
+    grid-template-areas: "one two four";
+    place-items: center;
+    gap: 25px;
+}
+.tool{
+    background: #fff;
+    padding: 1.5rem 1rem;
+    width: 300px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px 1px hsl(230, 18%, 87%);
+}
+.tool p{
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(229, 6%, 66%);
+    margin-top: 5px;
+}
+.tool.one{
+    border-color: hsl(180, 62%, 55%);
+}
+.tool.two{
+    border-color: hsl(0, 78%, 62%);
+    margin-bottom: 25px;
+}
+.tool.three{
+    border-color: hsl(34, 97%, 64%);
+}
+.tool.four{
+    border-color: hsl(212, 86%, 64%);
+}
+.tool img{
+    margin-top: 1rem;
+    margin-left: 200px;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:1034px) {
+    .tool{
+        background: #fff;
+        padding: 1.5rem 1rem;
+        width: 250px;
+        border-top: 4px solid hsl(180, 62%, 55%);
+        border-radius: 5px;
+        box-shadow: 3px 5px 5px 1px hsl(230, 18%, 87%);
+    }
+    .tool img{
+        margin-top: .5rem;
+        margin-left: 150px;
+    }
+}
+
+@media (max-width:850px) {
+    body{
+        margin: 4rem 0;
+    }
+    .page-summary-section{
+        width: 90%;
+        text-align: center;
+    }
+    .page-summary-heading.two{
+        margin-bottom: 1rem;
+    }
+    .page-summary{
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+    .tools-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .tool{
+        width: 320px;
+    }
+    .tool img{
+        margin-top: 1rem;
+        margin-left: 220px;
+    }
+    
+}
