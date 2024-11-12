@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +10,13 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
 }
 .page-summary-section{
     width: 40%;
-    margin: 1rem auto;
+    height: auto;
+    margin: 2rem auto 2.4rem auto;
     text-align: center;
 }
 .page-summary-heading{
@@ -40,10 +40,11 @@ body{
     grid-template-areas: "one two four";
     place-items: center;
     gap: 25px;
+    margin-bottom: 2.4rem;
 }
 .tool{
     background: #fff;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     width: 300px;
     border-top: 4px solid hsl(180, 62%, 55%);
     border-radius: 5px;
@@ -69,10 +70,11 @@ body{
     border-color: hsl(212, 86%, 64%);
 }
 .tool img{
+    width: 20%;
     margin-top: 1rem;
     margin-left: 200px;
 }
-.attribution { font-size: 11px; text-align: center; margin-top: 1rem; }
+.attribution { font-size: 11px; text-align: center; margin-top: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (max-width:1034px) {
